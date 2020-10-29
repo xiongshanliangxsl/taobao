@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>登录</title>
+    <link rel="stylesheet" href="/css/login.css" type="text/css"/>
+</head>
+<body>
+    登录
+    <div th:object="${user}">
+        <h1 th:text="*{userName}">用户名</h1>
+        <h1 th:text="*{password}">密码</h1>
+        <h1 th:text="*{role?:'空'}">角色</h1>
+    </div>
+</body>
+</html>

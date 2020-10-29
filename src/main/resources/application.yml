@@ -1,0 +1,23 @@
+server:  
+  port: 8080
+logging:
+  path: D:\data\taobao
+# thymelea模板配置
+spring:
+  application:
+    name: taobao
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+  resources:
+    chain:
+      strategy:
+        content:
+          enabled: true
+          paths: /**
+# beetl模板配置
+beetl:
+  enabled: true
+  suffix: btl
+beetl-beetlsql:
+  dev: true # 即自动检查模板变化
